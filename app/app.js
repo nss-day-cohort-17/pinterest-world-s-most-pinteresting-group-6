@@ -1,4 +1,4 @@
-const app = angular.module('scrapHeap', ['ngRoute'])
+const app = angular.module('scrapHeap', ['ngRoute', 'ngMaterial'])
 
 app.config(function ($routeProvider) {
   $routeProvider
