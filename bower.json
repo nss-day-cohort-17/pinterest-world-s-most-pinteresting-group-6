@@ -1,0 +1,23 @@
+{
+  "name": "pinterest-world-s-most-pinteresting-group-6",
+  "homepage": "https://github.com/nss-day-cohort-17/pinterest-world-s-most-pinteresting-group-6",
+  "authors": [
+    "Ben Conner <ben.conner40@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "firebase": "^3.6.6",
+    "angular-material": "^1.1.1"
+  }
+}
