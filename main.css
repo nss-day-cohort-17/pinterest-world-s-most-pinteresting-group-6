@@ -113,7 +113,45 @@ header {
 }
 
 .login .Register .col a {
-    color: #E8A71C;
-    text-decoration: none;
-    font: 12px Arial;
+  color: #E8A71C;
+  text-decoration: none;
+  font: 12px Arial;
+  height : 1200px;
+  width : 99%;
+  background-color: #fcfcfc;
+  padding: 10px;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+/* ___column styling___ */
+section {
+  margin : 2px !important;
+  padding: 2px !important;
+  padding-left : 1px !important;
+  padding-right: 1px !important;
+}
+
+/* ___scrap styling___ */
+.scrap {
+  min-height : 100px;
+  /*background-color : #e8a71c;*/
+  margin : 2px !important;
+  border-radius: 15px;
+}
+
+/* ___individual scrap styling___ */
+.block1 {  min-height : 200px}
+.block5 {  min-height : 200px}
+.block6 {  min-height : 270px}
+.block7 {  min-height : 230px}
+.block8 {  min-height : 300px}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ___search bar___ */
+.search-bar {
+  margin-top: 0;
 }
