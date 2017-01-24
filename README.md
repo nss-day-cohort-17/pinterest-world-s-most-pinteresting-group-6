@@ -1,6 +1,6 @@
 ![image](https://cloud.githubusercontent.com/assets/20300881/22258583/c58178c6-e227-11e6-8edf-b2fac6cfe101.png)
 
-# modern-frameworks-group-pinterest
+# The World's Most Pinteresting Group
 
 # Using your mad Angular skillz
 
