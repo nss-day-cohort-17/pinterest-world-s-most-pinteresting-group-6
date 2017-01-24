@@ -1,4 +1,12 @@
-app.controller('NavCtrl', function ($scope, $routeParams) {
-    console.log("main controller!")
-    $scope.myVariable = "here it is!"
-}
+
+app.controller("NavBarCtrl", function($scope, $window, AuthFactory) {
+
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            $scope.loggedIn = true;
+            $window.location.href = "#/view";
+        } else {
+            $scope.loggedIn = false;
+        }
+        $scope.$apply();
+    });
