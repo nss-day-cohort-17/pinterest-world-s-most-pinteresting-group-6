@@ -1,5 +1,5 @@
 
-app.controller("NavBarCtrl", function($scope, $window, AuthFactory) {
+app.controller("NavBarCtrl", function($scope, $window) {
 
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
@@ -10,3 +10,10 @@ app.controller("NavBarCtrl", function($scope, $window, AuthFactory) {
         }
         $scope.$apply();
     });
+
+    $scope.logout = function() {
+        NavFactory.logoutUser(NavFactory.getUser());
+        $window.location.href = "#/login";
+    };
+
+});
