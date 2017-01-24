@@ -1,5 +1,5 @@
 
-app.controller("NavBarCtrl", function($scope, $window, AuthFactory) {
+app.controller("NavBarCtrl", function($scope, $window) {
 
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
