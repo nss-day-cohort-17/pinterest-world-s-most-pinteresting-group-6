@@ -24,6 +24,10 @@ app.config(function ($routeProvider) {
       controller: 'searchCtrl',
       templateUrl: 'app/partials/search.html'
     })
+      .when('/register', {
+      controller: 'registerCtrl',
+      templateUrl: 'app/partials/register.html'
+    })
     .otherwise ({
         redirectTo: '/'
       })
