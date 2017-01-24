@@ -2,19 +2,31 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link href="" rel="stylesheet">
+  <link href="/lib/bower_components/angular-material/angular-material.min.css" rel="stylesheet">
+  <!-- icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <!-- main styling -->
+  <link href="main.css" rel="stylesheet">
+
   <title>scrapHeap</title>
 </head>
 
 <body>
-    <div ng-app="scrapHeap">
-        <div ng-view></div>
-    </div>
+  <div ng-app="scrapHeap">
+      <div ng-view></div>
+  </div>
 
   <!-- dependency script tags -->
   <script src="/lib/bower_components/angular/angular.min.js"></script>
   <script src="/lib/bower_components/angular-route/angular-route.min.js"></script>
   <script src="/lib/bower_components/firebase/firebase.js"></script>
+  <!-- angular material script tags -->
+  <script src="/lib/bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="/lib/bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="/lib/bower_components/angular-messages/angular-messages.min.js"></script>
+  <script src="/lib/bower_components/angular-material/angular-material.min.js"></script>
 
   <!-- app script tags -->
   <script src="/app/app.js"></script>
