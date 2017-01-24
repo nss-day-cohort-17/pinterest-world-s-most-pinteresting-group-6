@@ -1,1 +1,43 @@
-<h1>search page</h1>
+<md-subheader class="search-bar">
+  <h1 class="md-display-1">search page</h1>
+  <md-input-container>
+    <label>Dig for scraps</label>
+    <input type="text" ng-model="search" />
+  </md-input-container>
+  <md-button class="md-raised" md-ink-ripple="#e84400" layout-align="center end"> Search
+    <md-tooltip>
+      i'm old legg
+    </md-tooltip>
+  </md-button>
+</md-subheader>
+
+
+<hr />
+
+<!-- four-colunm card structure -->
+
+<div layout="row" ng-cloak layout-fill >
+
+  <section layout="column" flex layout-padding layout-margin >
+    <img src="http://www.bonsaiempire.com/images/01-Juniper-bonsai-reyes.jpg" /><i class="material-icons">loupe</i>
+    <img class="scrap" src="http://www.bonsaiempire.com/images/top10/shohin/09-juniper-shohin-albek.jpg" />
+    <img class="scrap" src="http://www.bonsaiempire.com/great-bonsai-album/kunio-kobayashi-bonsai.JPG" />
+  </section>
+
+  <section layout="column" flex layout-padding layout-margin >
+    <img class="scrap" src="http://www.bonsaiempire.com/great-bonsai-album/Goshin-bonsai.jpg" />
+    <img class="scrap" src="http://www.bonsaiempire.com/images/top10/juniper/05-kokufuten-2013-juniper-bonsai.jpg" />
+    <img class="scrap" src="http://www.bonsaiempire.com/great-bonsai-album/kimura-bonsai.jpg" />
+  </section>
+
+  <section layout="column" flex layout-padding layout-margin >
+    <img class="scrap" src="http://www.bonsaiempire.com/images/04-Juniper-ebensperger.jpg" />
+    <img class="scrap" src="http://www.bonsaiempire.com/images/08-juniper-bonsai-blasco-paz.jpg" />
+  </section>
+
+  <section layout="column" flex layout-padding layout-margin >
+    <img class="scrap" src="http://www.bonsaiempire.com/images/top10/juniper/09-classic-juniper.jpg" />
+    <img class="scrap" src="http://www.bonsaiempire.com/images/top10/shohin/10-juniper-shohin.jpg" />
+  </section>
+
+</div>
