@@ -1,1 +1,12 @@
 <div ng-controller="navCtrl"></div>
+
+<md-toolbar class="md-padding">
+    <div class="md-toolbar-tools">
+      <md-button class="mdi mdi-plus-circle" ng-href="#/pin" name="addScrap"><strong>Add Scrap</strong></md-button>
+      <md-button class="mdi mdi-plus-circle" ng-href="#/board" name="addBin"><strong>Add Bin</strong></md-button>
+      <md-button class="mdi mdi-plus-circle" ng-href="#/view" name="viewBin"><strong>View Bin</strong></md-button>
+      <md-button class="mdi mdi-plus-circle" ng-click="logout()" name="logout" ng-show="loggedIn"><strong>Logout</strong></md-button>
+    </div>
+  </md-toolbar>
+
+</div>
