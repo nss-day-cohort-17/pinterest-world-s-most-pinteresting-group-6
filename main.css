@@ -1,8 +1,9 @@
 body {
   height : 1200px;
   width : 99%;
-  background-color: #dedede;
+  background-color: #fcfcfc;
   padding: 10px;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
 }
 
 /* ___column styling___ */
@@ -16,9 +17,9 @@ section {
 /* ___scrap styling___ */
 .scrap {
   min-height : 100px;
-  background-color : #e8a71c;
+  /*background-color : #e8a71c;*/
   margin : 2px !important;
-  border-radius: 7px;
+  border-radius: 15px;
 }
 
 /* ___individual scrap styling___ */
@@ -27,3 +28,14 @@ section {
 .block6 {  min-height : 270px}
 .block7 {  min-height : 230px}
 .block8 {  min-height : 300px}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ___search bar___ */
+.search-bar {
+  display: inline;
+  margin-top: 0;
+}
