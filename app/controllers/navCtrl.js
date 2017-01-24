@@ -10,3 +10,10 @@ app.controller("NavBarCtrl", function($scope, $window) {
         }
         $scope.$apply();
     });
+
+    $scope.logout = function() {
+        NavFactory.logoutUser(NavFactory.getUser());
+        $window.location.href = "#/login";
+    };
+
+});
