@@ -1,1 +1,33 @@
 <h1>hey</h1>
+
+
+<hr />
+<h3>Your bins</h3>
+
+<div layout="row flex" ng-cloak layout-fill >
+
+  <md-card class="bin">
+    <img src="card-image.png" class="md-card-image" alt="image caption">
+    <md-card-content>
+      <!-- <h2>Add new bin</h2> -->
+      <p>Card content</p>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button class="md-raised">Add new Bin</md-button>
+    </md-card-actions>
+  </md-card>
+
+  <md-card class="bin" ng-repeat="bin in bins">
+    <img src="card-image.png" class="md-card-image" alt="image caption">
+    <md-card-content>
+      <h2>{{bin.title}}</h2>
+      <!-- <p>Stuff about {{bin.title}}</p> -->
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button class="md-raised">Edit</md-button>
+    </md-card-actions>
+  </md-card>
+
+
+
+</div>

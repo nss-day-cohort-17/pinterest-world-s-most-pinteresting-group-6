@@ -38,3 +38,10 @@ img {
 .search-bar {
   margin-top: 0;
 }
+
+
+/* _____bin styling_____ */
+.bin {
+  width: 35%;
+  height: auto;
+}
