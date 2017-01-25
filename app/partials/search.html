@@ -22,18 +22,18 @@
   <div>
     <md-grid-list md-cols="1200" md-row-height="1:1">
       <md-grid-tile ng-repeat="scrap in scraps" md-rowspan="310" md-colspan="300">
-        <!-- makes each card a button which shows dialog box on click -->
-        <md-button aria-label class="md-raised" ng-click="showDialog($event)">
-
-          <span ng-click="addScrap($event)">
-            <i layout-align="center" class="material-icons">add_circle</i>
-            <md-tooltip>
-              Add to a bin
-            </md-tooltip>
-          </span>
-          <img class="scrap-img" ng-src="{{scrap.url}}">
-          <p hidden>{{scrap.title}}</p>
-        </md-button>
+        <p hidden>{{scrap.title}}</p>
+          <!-- makes each card a button which shows dialog box on click -->
+          <md-button aria-label class="md-raised" ng-click="showDialog($event)">
+            <!-- 'add' icon with click event -->
+            <span ng-click="addScrap($event)">
+              <i class="material-icons">add_circle</i>
+              <md-tooltip>
+                Add to a bin
+              </md-tooltip>
+            </span>
+            <img class="scrap-img" ng-src="{{scrap.url}}">
+          </md-button>
       </md-grid-tile>
     </md-grid-list>
 

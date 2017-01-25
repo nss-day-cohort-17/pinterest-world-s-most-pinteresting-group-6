@@ -16,7 +16,7 @@ app.controller('searchCtrl', function($scope, $mdDialog, firebaseFactory) {
     console.log(ev.path[0].currentSrc);
     // targeting specific img and title for clicked card
     $scope.dialogImg = ev.path[0].currentSrc;
-    $scope.dialogTitle = ev.path[1].textContent;
+    $scope.dialogTitle = ev.path[2].textContent;
     console.log(ev);
     // dialog properties
     $mdDialog.show({
