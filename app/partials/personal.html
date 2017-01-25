@@ -1,30 +1,36 @@
+<div class="personal-page">
 
-<h3>Your bins</h3>
+    <h3>Your bins</h3>
 
-<div layout="row" ng-cloak layout-wrap>
-  <div flex="30" class="bin">
-      <md-card ng-style="{'background-image' : 'url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrn-YL5BVF9UnBW1JaqQv5pXmEeRWwp-LzFOqOqXvM1Yu2DWHzwg)', 'color':'#e8a71c', 'height':'300px','object-fit': 'cover' }">
-        <md-card-content>
-          <!-- <h2>Add new bin</h2> -->
-          <h2>Card content</h2>
-        </md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-raised">Add new Bin</md-button>
-        </md-card-actions>
-      </md-card>
-  </div>
+    <div layout="row" ng-cloak layout-wrap>
+      <div flex="30" class="bin">
+          <md-card>
+            <md-card-content>
+              <!-- <h2>Add new bin</h2> -->
+              <h2>Card content</h2>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+              <md-button class="md-raised">Add new Bin</md-button>
+            </md-card-actions>
+          </md-card>
+      </div>
+    </div>
+    <div>
+      <md-grid-list md-cols="1200" md-row-height="1:1">
+        <md-grid-tile ng-repeat="(key,val) in bins" md-rowspan="310" md-colspan="300">
+          <a href="#!/personal/{{key}}">
 
- <div flex="30" class="bin" ng-repeat="(key,val) in bins">
-    <a href="#!/personal/{{key}}">
-          <md-card ng-style="{'background-image' : 'url({{val.image}})',   'color': '#e8a71c', 'height':'300px', 'object-fit': 'cover' }">
-           <md-card-content>
-             <h2>{{val.title}}</h2>
-             <!-- <p>Stuff about {{bin.title}}</p> -->
-           </md-card-content>
-           <md-card-actions layout="row" layout-align="end center">
-                <md-button class="md-raised">Edit</md-button>
-           </md-card-actions>
-               </md-card>
-    </a>
- </div>
+            <!-- makes each card a button which shows dialog box on click -->
+            <md-button aria-label class="md-raised" ng-click="showDialog($event)">
+              <!-- 'add' icon with click event -->
+
+              <img class="scrap-img" ng-src="{{val.image}}">
+              <h3>{{val.title}}</h3>
+            </md-button>
+        </a>
+        </md-grid-tile>
+      </md-grid-list>
+
+    </div>
+
 </div>
