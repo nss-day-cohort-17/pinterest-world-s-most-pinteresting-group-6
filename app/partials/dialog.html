@@ -1,0 +1,38 @@
+
+  <md-dialog aria-label="Scrap">
+    <form ng-cloak>
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <h2>{{dialogTitle}}</h2>
+          <span flex></span>
+          <md-button class="md-icon-button" ng-click="cancel()">
+            <i class="material-icons">clear</i>
+          </md-button>
+        </div>
+      </md-toolbar>
+
+      <md-dialog-content>
+        <div class="md-dialog-content">
+          <h2>Using .md-dialog-content class that sets the padding as the spec</h2>
+          <p>
+            Some kind of description
+          </p>
+
+          <img style="margin: auto; max-width: 100%;" alt="pic" src="{{dialogImg}}">
+
+          <p>
+            More description
+          </p>
+
+        </div>
+      </md-dialog-content>
+
+      <md-dialog-actions layout="row">
+        <md-button href="#" target="_blank" md-autofocus>
+          Link to something
+        </md-button>
+        <span flex></span>
+
+      </md-dialog-actions>
+    </form>
+  </md-dialog>

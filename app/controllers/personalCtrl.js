@@ -8,4 +8,6 @@ app.controller('personalCtrl', function($scope, firebaseFactory){
         //$scope.scraps = res
 
     })
+
+
 })

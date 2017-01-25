@@ -145,18 +145,17 @@ section {
 }
 
 /* ___individual scrap styling___ */
-.block1 {  min-height : 200px}
-.block5 {  min-height : 200px}
-.block6 {  min-height : 270px}
-.block7 {  min-height : 230px}
-.block8 {  min-height : 300px}
 
 img {
   width: 100%;
   height: auto;
 }
 
-/* ___search bar___ */
+/* ____________search page__________ */
+.search-page {
+    background-color: white !important;
+}
+
 .search-bar {
   margin-top: 0;
 }
@@ -165,4 +164,10 @@ img {
 /* _____bin styling_____ */
 .bin {
     color: #e8a71c;
+}
+
+.search-logo {
+    margin-left: 83%;
+    width: 15%;
+    height: 15%;
 }

@@ -3,6 +3,7 @@ app.factory('firebaseFactory', function($http, $q){
     return{
         getFirebaseBins(){
             return $http
+
                 .get('https://worlds-most-pinteresting-group.firebaseio.com/bins.json')
                 .then((res)=>{
                     console.log("factory res", res);
@@ -23,6 +24,7 @@ app.factory('firebaseFactory', function($http, $q){
                 .then((res)=>{
                     console.log("factory res", res);
                     return res.data
+
             })
         }
 
