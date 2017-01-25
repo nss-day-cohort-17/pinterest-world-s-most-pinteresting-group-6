@@ -144,6 +144,17 @@ section {
   border-radius: 15px;
 }
 
+.scrap-img {
+    position: relative;
+    z-index: 1;
+
+}
+
+.save-scrap {
+    position: absolute;
+    z-index: 100;
+}
+
 /* ___individual scrap styling___ */
 
 img {
