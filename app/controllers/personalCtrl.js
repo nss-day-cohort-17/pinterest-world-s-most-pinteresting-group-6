@@ -5,4 +5,6 @@ app.controller('personalCtrl', function($scope, firebaseFactory){
     .then((res)=>{
         console.log(" control res", res);
     })
+
+
 })
