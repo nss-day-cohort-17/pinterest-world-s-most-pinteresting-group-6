@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: 100%
+    background-size: cover;
 }
 
 header {
@@ -158,4 +158,10 @@ img {
 
 .search-bar {
   margin-top: 0;
+}
+
+
+/* _____bin styling_____ */
+.bin {
+    color: #e8a71c;
 }
