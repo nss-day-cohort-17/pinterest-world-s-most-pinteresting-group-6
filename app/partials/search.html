@@ -25,18 +25,15 @@
         <p hidden>{{scrap.title}}</p>
       <!-- makes each card a button which shows dialog box on click
                 shows "save" button on mouseover-->
-          <md-button ng-mouseover="open = true" ng-mouseleave="open = false" aria-label class="md-raised" ng-click="showDialog($event)">
+          <div ng-mouseover="open = true" ng-mouseleave="open = false" aria-label class="md-raised" ng-click="showDialog($event)">
 
               <md-button class="save-scrap md-raised md-warn" type="button" ng-show="open">
-              Save
+              
               <i class="fa fa-plus"></i>
-                <md-tooltip>
-                Add to a bin
-                </md-tooltip>
               </md-button>
 
             <img class="scrap-img" ng-src="{{scrap.url}}">
-          </md-button>
+          </div>
       </md-grid-tile>
     </md-grid-list>
 

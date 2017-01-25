@@ -140,14 +140,14 @@ section {
 .scrap {
   min-height : 100px;
   /*background-color : #e8a71c;*/
-  margin : 2px !important;
+  margin : 5px !important;
   border-radius: 15px;
 }
 
 .scrap-img {
     position: relative;
     z-index: 1;
-
+    border-radius: 8px;
 }
 
 .save-scrap {
