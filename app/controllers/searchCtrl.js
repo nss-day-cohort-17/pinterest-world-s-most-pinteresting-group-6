@@ -2,10 +2,10 @@ app.controller('searchCtrl', function($scope, $mdDialog, firebaseFactory) {
     console.log("search");
 
   firebaseFactory
-    .getFirebase()
+    .getFirebaseScraps()
     .then((res)=>{
       console.log(" control res", res);
-      $scope.scraps = res.scraps
+      $scope.scraps = res
     })
 
 // __________show dialog boxes on click__________
