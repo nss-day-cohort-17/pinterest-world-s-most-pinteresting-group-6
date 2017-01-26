@@ -140,8 +140,19 @@ section {
 .scrap {
   min-height : 100px;
   /*background-color : #e8a71c;*/
-  margin : 2px !important;
+  margin : 5px !important;
   border-radius: 15px;
+}
+
+.scrap-img {
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.save-scrap {
+    position: absolute;
+    z-index: 100;
 }
 
 /* ___individual scrap styling___ */
@@ -151,8 +162,8 @@ img {
   height: auto;
 }
 
-/* ____________search page__________ */
-.search-page {
+/* _______search page______ */
+.search-page  {
     background-color: white !important;
 }
 
@@ -164,4 +175,18 @@ img {
 /* _____bin styling_____ */
 .bin {
     color: #e8a71c;
+}
+
+.search-logo {
+    margin-left: 83%;
+    width: 15%;
+    height: 15%;
+}
+
+.personal-page {
+    background-color: white;
+}
+
+.details-page {
+    background-color: white;
 }

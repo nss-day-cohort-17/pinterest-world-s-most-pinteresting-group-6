@@ -2,11 +2,16 @@ app.controller('searchCtrl', function($scope, $mdDialog, firebaseFactory) {
     console.log("search");
 
   firebaseFactory
-    .getFirebase()
+    .getFirebaseScraps()
     .then((res)=>{
       console.log(" control res", res);
-      $scope.scraps = res.scraps
+      $scope.scraps = res
     })
+
+  $scope.saveScrap = function(event) {
+    console.log(event, 'hi')
+  }
+
 
 // __________show dialog boxes on click__________
   $scope.status = '  ';
@@ -16,7 +21,7 @@ app.controller('searchCtrl', function($scope, $mdDialog, firebaseFactory) {
     console.log(ev.path[0].currentSrc);
     // targeting specific img and title for clicked card
     $scope.dialogImg = ev.path[0].currentSrc;
-    $scope.dialogTitle = ev.path[2].textContent;
+    $scope.dialogTitle = ev.path[2].children[0].innerText;
     console.log(ev);
     // dialog properties
     $mdDialog.show({
