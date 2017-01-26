@@ -1,4 +1,4 @@
-app.factory('firebaseFactory', function($http, $q){
+app.factory('firebaseFactory', function($http){
 
     return{
         getFirebaseBins(){
