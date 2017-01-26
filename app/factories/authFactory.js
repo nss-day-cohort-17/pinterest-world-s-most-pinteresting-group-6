@@ -1,8 +1,18 @@
-app.factory('authFactory', function($q){
-  return {
-    login (email, pass) {
-      // converts native promise to angular $q promise
-      return $q.resolve(firebase.auth().signInWithEmailAndPassword(email, pass))
+app.factory('authFactory', ($q, $http) => {
+    return {
+      login (email, pass) {
+        return $q.resolve(firebase.auth().signInWithEmailAndPassword(email, pass))
+      },
+      getUserId(){
+        return firebase.auth().currentUser.uid
+      },
+      register(user){
+        console.log("user", user);
+
+          firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
+        //   .then(() => {
+        //       setUser
+        //   })
+      }
     }
-  }
 })
