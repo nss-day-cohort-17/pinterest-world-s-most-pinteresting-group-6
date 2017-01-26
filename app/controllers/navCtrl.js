@@ -1,10 +1,10 @@
 
-app.controller("NavBarCtrl", function($scope, $window) {
+app.controller("NavBarCtrl", function($scope, $window, authFactory) {
 
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
             $scope.loggedIn = true;
-            $window.location.href = "#/view";
+            $window.location.href = "app/partials/personal.html";
         } else {
             $scope.loggedIn = false;
         }
@@ -12,8 +12,8 @@ app.controller("NavBarCtrl", function($scope, $window) {
     });
 
     $scope.logout = function() {
-        NavFactory.logoutUser(NavFactory.getUser());
-        $window.location.href = "#/login";
+        authFactory.logoutUser(authFactory.getUser());
+        $window.location.href = "app/partials/login.html";
     };
 
 });
