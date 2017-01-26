@@ -23,18 +23,19 @@
   <div>
     <md-grid-list md-cols="1200" md-row-height="1:1">
       <md-grid-tile ng-repeat="scrap in scraps" md-rowspan="310" md-colspan="300">
-        <p hidden>{{scrap.title}}</p>
-      <!-- makes each card a button which shows dialog box on click
+        <p hidden>{{scrap.title}}</p>  <!-- attaches the hidden title and id of each scrap for targeting purposes -->
+        <p hidden>{{scrap.binId}}</p>
+
+          <md-button ng-mouseover="open = true" ng-mouseleave="open = false" aria-label class="md-raised" ng-click="showDialog($event)">   <!-- makes each card a button which shows dialog box on click
                 shows "save" button on mouseover-->
-          <div ng-mouseover="open = true" ng-mouseleave="open = false" aria-label class="md-raised" ng-click="showDialog($event)">
 
               <md-button class="save-scrap md-raised md-warn" type="button" ng-show="open">
-              
+              +
               <i class="fa fa-plus"></i>
               </md-button>
 
             <img class="scrap-img" ng-src="{{scrap.url}}">
-          </div>
+          </md-button>
       </md-grid-tile>
     </md-grid-list>
 

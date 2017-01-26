@@ -25,6 +25,10 @@ app.factory('firebaseFactory', function($http, $q){
                 return res.data
 
             })
+        },
+        postScrap(scrap){
+            return $http
+                .post(`https://worlds-most-pinteresting-group.firebaseio.com/bins.json`, scrap);
         }
 
     }
