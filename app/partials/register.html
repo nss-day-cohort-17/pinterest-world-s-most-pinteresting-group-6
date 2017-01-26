@@ -4,12 +4,12 @@
 
 
 <div class="login">
-  <div class="title">Register</div>
-  <form action="#" method="post" enctype="application/x-www-form-urlencoded">
-      <input type="text" required title="First Name required" placeholder="First Name" data-icon="U">
-      <input type="text" required title="Last Name required" placeholder="Last Name" data-icon="U">
-      <input type="text" required title="Email required" placeholder="Email" data-icon="U">
-      <input type="password" required title="Password required" placeholder="Password" data-icon="x">
-      <a href="#!/personal" class="Submit">Submit</a>
+    <div class="title">Register</div>
+        <form ng-submit="register()">
+            <input ng-model="user.firstName" required type="text" title="First Name required" placeholder="First Name" data-icon="U">
+            <input ng-model="user.lastName" required type="text" title="Last Name required" placeholder="Last Name" data-icon="U">
+            <input ng-model="user.email" required type="text" title="Email required" placeholder="Email" data-icon="U">
+            <input ng-model="user.password" required type="password" title="Password required" placeholder="Password" data-icon="x">
+        <input type="submit">
     </form>
 </div>
