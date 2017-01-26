@@ -12,9 +12,11 @@ app.config(function ($routeProvider) {
   });
 
   const userStatus = {
-      authState($location){
+      authState:function ($location){
+          console.log("hey");
           const unsubscribe = firebase.auth().onAuthStateChanged(user =>{
               unsubscribe()
+              console.log("userStatus", user);
               if (!user){
                   $location.url('/')
               }
@@ -30,12 +32,12 @@ app.config(function ($routeProvider) {
       .when('/personal', {
       controller : 'personalCtrl',
       templateUrl : 'app/partials/personal.html',
-      reslove : userStatus
+      resolve : userStatus
     })
       .when('/search', {
       controller: 'searchCtrl',
       templateUrl: 'app/partials/search.html',
-      reslove : userStatus
+      resolve : userStatus
     })
       .when('/register', {
       controller: 'registerCtrl',
@@ -44,7 +46,7 @@ app.config(function ($routeProvider) {
     .when('/personal/:someVarible',{
         controller: 'binDetailCtrl',
         templateUrl: 'app/partials/binDetail.html',
-        reslove : userStatus
+        resolve : userStatus
     })
     .otherwise ({
         redirectTo: '/'
