@@ -162,8 +162,8 @@ img {
   height: auto;
 }
 
-/* ____________search page__________ */
-.search-page, .personal-page, {
+/* _______search page______ */
+.search-page  {
     background-color: white !important;
 }
 
@@ -181,4 +181,12 @@ img {
     margin-left: 83%;
     width: 15%;
     height: 15%;
+}
+
+.personal-page {
+    background-color: white;
+}
+
+.details-page {
+    background-color: white;
 }
