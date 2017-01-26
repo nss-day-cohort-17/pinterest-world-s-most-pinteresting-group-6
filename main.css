@@ -148,6 +148,7 @@ section {
     position: relative;
     z-index: 1;
     border-radius: 8px;
+    margin-top: 4%;
 }
 
 .save-scrap {

@@ -13,26 +13,31 @@
 
       <md-dialog-content>
         <div class="md-dialog-content">
-          <h2>Header</h2>
+          <h2>
+          <!-- Header -->
+          </h2>
           <p>
-            description
+            <!-- description -->
           </p>
 
           <img style="margin: auto; max-width: 100%;" alt="pic" src="{{dialogImg}}">
 
-          <p>
-            description
+          <p hidden>
+            {{scrapKey}}  <!-- hidden here for targeting purposes -->
           </p>
 
         </div>
       </md-dialog-content>
 
       <md-dialog-actions layout="row">
+
         <md-button ng-click="saveScrap($event)">
           Save
         </md-button>
         <span flex></span>
-
+          <p hidden>
+            {{scrapKey}}  <!-- hidden here for targeting purposes -->
+          </p>
       </md-dialog-actions>
     </form>
   </md-dialog>

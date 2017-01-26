@@ -2,7 +2,7 @@ const app = angular.module('scrapHeap', ['ngRoute', 'ngMaterial'])
 
 app.config(function ($routeProvider) {
 
-  //Initialize Firebase
+  // Initialize Firebase
   firebase.initializeApp({
       apiKey: "AIzaSyAdwMhu7PbaHYWB29WN9q9a26soPk2vEAQ",
       authDomain: "worlds-most-pinteresting-group.firebaseapp.com",
@@ -11,6 +11,7 @@ app.config(function ($routeProvider) {
       messagingSenderId: "319190053501"
   });
 
+  // this checks to make sure user is signed in
   const userStatus = {
       authState:function ($location){
           console.log("hey");
