@@ -152,7 +152,7 @@ img {
 }
 
 /* ____________search page__________ */
-.search-page {
+.search-page, .personal-page, {
     background-color: white !important;
 }
 
