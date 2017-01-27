@@ -1,4 +1,4 @@
-app.controller('personalCtrl', function($scope, firebaseFactory){
+app.controller('personalCtrl', function($scope, firebaseFactory ){
     console.log("personal");
     firebaseFactory
     .getFirebaseBins()

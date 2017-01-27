@@ -1,19 +1,11 @@
 
-app.controller("navCtrl", function($scope, $window, authFactory) {
-
-    // firebase.auth().onAuthStateChanged((user) => {
-    //     if (user) {
-    //         $scope.loggedIn = true;
-    //         $window.location.href = "#!/";
-    //     } else {
-    //         $scope.loggedIn = false;
-    //     }
-    //     $scope.$apply();
-    // });
+app.controller("navCtrl", function($scope, $q, $location) {
 
     $scope.logout = function() {
-        // authFactory.logoutUser(authFactory.getUser());
-        // $window.location.href = "#!/personal";
-    };
+        return $q.resolve(firebase.auth().signOut())
+        .then(()=>{
+            $location.url('/')
+        })
 
+    }
 });
