@@ -1,0 +1,42 @@
+
+<div class="details-page">
+
+  <md-subheader class="search-bar">
+    <img class="search-logo" src="https://images.cooltext.com/4867457.png">
+    <!-- <h1 class="md-display-1">search page</h1> -->
+    <md-input-container>
+      <label>Dig for scraps</label>
+      <input type="text" ng-model="search" />
+    </md-input-container>
+    <md-button class="md-raised" md-ink-ripple="#E8A71C" layout-align="center end"> Search
+      <md-tooltip>
+        i'm old legg
+      </md-tooltip>
+    </md-button>
+  </md-subheader>
+  <hr />
+<!-- card repeater -->
+  <div>
+    <md-grid-list md-cols="1200" md-row-height="1:1">
+      <md-grid-tile ng-repeat="scrap in scraps" ng-if="scrap.binId === key" md-rowspan="310" md-colspan="300">
+        <p hidden>{{scrap.title}}</p>
+      <!-- makes each card a button which shows dialog box on click
+                shows "save" button on mouseover-->
+          <md-button ng-mouseover="open = true" ng-mouseleave="open = false" aria-label class="md-raised" ng-click="showDialog($event)">
+
+              <md-button class="save-scrap md-raised md-warn" type="button" ng-show="open">
+              Delete
+              <i class="fa fa-plus"></i>
+                <md-tooltip>
+                Delete from bin
+                </md-tooltip>
+              </md-button>
+
+            <img class="scrap-img" ng-src="{{scrap.url}}">
+          </md-button>
+      </md-grid-tile>
+    </md-grid-list>
+
+  </div>
+
+</div>

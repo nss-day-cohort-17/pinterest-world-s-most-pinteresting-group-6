@@ -1,0 +1,35 @@
+<div class="personal-page">
+    <div ng-controller="navCtrl" ng-include="'app/partials/nav.html'"></div>
+    <img class="search-logo" src="https://images.cooltext.com/4867457.png">
+    <div layout="row" ng-cloak layout-wrap>
+      <div flex="30" class="bin">
+          <md-card>
+            <md-card-content>
+              <!-- <h2>Add new bin</h2> -->
+              <h2>Card content</h2>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+              <md-button class="md-raised">Add new Bin</md-button>
+            </md-card-actions>
+          </md-card>
+      </div>
+    </div>
+    <div>
+      <md-grid-list md-cols="1200" md-row-height="1:1">
+        <md-grid-tile ng-repeat="(key,val) in bins" md-rowspan="310" md-colspan="300">
+          <a href="#!/personal/{{key}}">
+
+            <!-- makes each card a button which shows dialog box on click -->
+            <md-button aria-label class="md-raised" ng-click="showDialog($event)">
+              <!-- 'add' icon with click event -->
+
+              <img class="scrap-img" ng-src="{{val.image}}">
+              <h3>{{val.title}}</h3>
+            </md-button>
+        </a>
+        </md-grid-tile>
+      </md-grid-list>
+
+    </div>
+
+</div>

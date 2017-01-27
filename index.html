@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <link href="/lib/bower_components/angular-material/angular-material.min.css" rel="stylesheet">
+  <!-- icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <!-- main styling -->
+  <link href="main.css" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="https://thumbs.dreamstime.com/x/metallic-industrial-mechanical-claw-junk-yard-isolated-white-background-d-illustration-83171648.jpg" sizes="16x16">
+  <title>scrapHeap</title>
+</head>
+
+<body>
+  <div ng-app="scrapHeap">
+
+      <div ng-view></div>
+  </div>
+
+  <!-- firebase script tags -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+  <!-- dependency script tags -->
+  <script src="/lib/bower_components/angular/angular.min.js"></script>
+  <script src="/lib/bower_components/angular-route/angular-route.min.js"></script>
+  <script src="/lib/bower_components/firebase/firebase.js"></script>
+
+  <!-- angular material script tags -->
+  <script src="/lib/bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="/lib/bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="/lib/bower_components/angular-messages/angular-messages.min.js"></script>
+  <script src="/lib/bower_components/angular-material/angular-material.min.js"></script>
+
+  <!-- app script tags -->
+  <script src="/app/app.js"></script>
+
+  <!-- controller script tags -->
+  <script src="app/controllers/loginCtrl.js"></script>
+  <script src="app/controllers/personalCtrl.js"></script>
+  <script src="app/controllers/searchCtrl.js"></script>
+  <script src="app/controllers/registerCtrl.js"></script>
+  <script src="app/controllers/binDetailCtrl.js"></script>
+  <script src="app/controllers/navCtrl.js"></script>
+
+ <!-- factory script tags -->
+ <script src="app/factories/firebaseFactory.js"></script>
+ <script src="app/factories/authFactory.js"></script>
+ <script src="app/factories/setUserFactory.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<div class="search-page">
+  <div ng-controller="navCtrl" ng-include="'app/partials/nav.html'"></div>
+  <md-subheader class="search-bar">
+    <img class="search-logo" src="https://images.cooltext.com/4867457.png">
+    <!-- h1 class="md-display-1">search page</h1> -->
+    <md-input-container>
+      <label>Dig for scraps</label>
+      <input type="text" ng-model="search" />
+    </md-input-container>
+    <md-button class="md-raised" md-ink-ripple="#E8A71C" layout-align="center end"> Search
+      <md-tooltip>
+        i'm old legg
+      </md-tooltip>
+    </md-button>
+  </md-subheader>
+
+
+  <hr />
+
+
+
+<!-- card repeater -->
+  <div>
+    <md-grid-list md-cols="1200" md-row-height="1:1">
+      <md-grid-tile ng-repeat="scrap in scraps" md-rowspan="310" md-colspan="300">
+        <p hidden>{{scrap.title}}</p>  <!-- attaches the hidden title and id of each scrap for targeting purposes -->
+        <p hidden>{{scrap.binId}}</p>
+
+          <md-button ng-mouseover="open = true" ng-mouseleave="open = false" aria-label class="md-raised" ng-click="showDialog($event)">   <!-- makes each card a button which shows dialog box on click
+                shows "save" button on mouseover-->
+
+              <md-button class="save-scrap md-raised md-warn" type="button" ng-show="open">
+              +
+              <i class="fa fa-plus"></i>
+              </md-button>
+
+            <img class="scrap-img" ng-src="{{scrap.url}}">
+          </md-button>
+      </md-grid-tile>
+    </md-grid-list>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- hard coded four-colunm card structure -->
+
+ <!--  <div layout="row" ng-cloak layout-fill >
+    <section layout="column" flex layout-padding layout-margin >
+      <md-button class="md-raised" ng-click="showDialog($event)"><img src="http://www.bonsaiempire.com/images/01-Juniper-bonsai-reyes.jpg" /><i layout-align=
+      "center" class="material-icons">add_circle</i>
+      </md-button>
+      <img class="scrap" src="http://www.bonsaiempire.com/images/top10/shohin/09-juniper-shohin-albek.jpg" />
+      <img class="scrap" src="http://www.bonsaiempire.com/great-bonsai-album/kunio-kobayashi-bonsai.JPG" />
+    </section>
+    <section layout="column" flex layout-padding layout-margin >
+      <img class="scrap" src="http://www.bonsaiempire.com/great-bonsai-album/Goshin-bonsai.jpg" />
+      <img class="scrap" src="http://www.bonsaiempire.com/images/top10/juniper/05-kokufuten-2013-juniper-bonsai.jpg" />
+      <img class="scrap" src="http://www.bonsaiempire.com/great-bonsai-album/kimura-bonsai.jpg" />
+    </section>
+    <section layout="column" flex layout-padding layout-margin >
+      <img class="scrap" src="http://www.bonsaiempire.com/images/04-Juniper-ebensperger.jpg" />
+      <img class="scrap" src="http://www.bonsaiempire.com/images/08-juniper-bonsai-blasco-paz.jpg" />
+    </section>
+    <section layout="column" flex layout-padding layout-margin >
+      <img class="scrap" src="http://www.bonsaiempire.com/images/top10/juniper/09-classic-juniper.jpg" />
+      <img class="scrap" src="http://www.bonsaiempire.com/images/top10/shohin/10-juniper-shohin.jpg" />
+    </section>
+  </div> -->

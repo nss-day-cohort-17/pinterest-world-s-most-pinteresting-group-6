@@ -1,0 +1,43 @@
+
+  <md-dialog aria-label="Scrap">
+    <form ng-cloak>
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <h2>{{dialogTitle}}</h2>
+          <span flex></span>
+          <md-button class="md-icon-button" ng-click="cancel()">
+            <i class="material-icons">clear</i>
+          </md-button>
+        </div>
+      </md-toolbar>
+
+      <md-dialog-content>
+        <div class="md-dialog-content">
+          <h2>
+          <!-- Header -->
+          </h2>
+          <p>
+            <!-- description -->
+          </p>
+
+          <img style="margin: auto; max-width: 100%;" alt="pic" src="{{dialogImg}}">
+
+          <p hidden>
+            {{scrapKey}}  <!-- hidden here for targeting purposes -->
+          </p>
+
+        </div>
+      </md-dialog-content>
+
+      <md-dialog-actions layout="row">
+
+        <md-button ng-click="saveScrap($event)">
+          Save
+        </md-button>
+        <span flex></span>
+          <p hidden>
+            {{scrapKey}}  <!-- hidden here for targeting purposes -->
+          </p>
+      </md-dialog-actions>
+    </form>
+  </md-dialog>
